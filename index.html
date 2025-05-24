@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Der Code der Liebe</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: #fff0f5;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e055a0;
+    }
+    .error {
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Der Code der Liebe 💖</h1>
+  <p>Gib das Passwort ein, um das nächste Kapitel zu öffnen:</p>
+
+  <input type="password" id="pwd" placeholder="Passwort eingeben" />
+  <button onclick="check()">Los</button>
+
+  <div id="error" class="error"></div>
+
+  <script>
+    function check() {
+      const input = document.getElementById("pwd").value.trim().toLowerCase();
+      const correct = "liebe";
+      const errorBox = document.getElementById("error");
+
+      if (input === correct) {
+        window.location.href = "geheim.html";
+      } else {
+        errorBox.textContent = "Leider falsch. Versuch es nochmal ❤️";
+      }
+    }
+  </script>
+
+</body>
+</html>
