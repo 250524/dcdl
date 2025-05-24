@@ -9,5 +9,5 @@
 #   \__/          | |        | |
 #                 |_|        |_|
 
-[🔑 **Zum Portal publicsun.org**](https://publicsun.org)
+[🔑](https://publicsun.org)
 
